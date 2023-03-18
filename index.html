@@ -4,58 +4,135 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome App</title>
+    <title>Homework-1-html-intro</title>
   </head>
   <body>
-    <header>Header Linear</header>
+    <header>
+      <h1>Homework-1-html-intro (Header h1)</h1>
+    </header>
     <main>
-      <aside>Sidebar</aside>
       <section>
-        <article>
+        <h2>Header h2</h2>
+        <h3>Header h3</h3>
+        <h4>Header h4</h4>
+        <h5>Header h5</h5>
+        <h6>Header h6</h6>
+        <p>
+          <b>Lorem</b> ipsum <i>dolor sit amet</i>, <s>consectetur adipisicing elit.</s>
+          <u>Asperiores consequuntur dicta fugiat maiores ratione suscipit tempora tenetur!</u> Cum
+          dolor est iure magni veritatis? Accusamus at cum dicta libero quam sunt!
+        </p>
+      </section>
+
+      <section>
+        <div>
           <ul>
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
+            <li>1.</li>
+            <li>
+              2.
+              <ul>
+                <li>2.1.</li>
+                <li>
+                  2.2.
+                  <ul>
+                    <li>2.2.1.</li>
+                    <li>2.2.2.</li>
+                  </ul>
+                </li>
+                <li>2.3.</li>
+              </ul>
+            </li>
+            <li>3.</li>
           </ul>
-          <h1>Header Text</h1>
-          <p>Text <i>paragraph</i></p>
-        </article>
-        <a href="http://google.com">Google</a>
-        <img
-          width="100"
-          src="https://w-dog.ru/wallpapers/9/14/461388963092987/gora-moran-snejk-river-grand-teton-nacionalnyj-park-vajoming-reka-snejk-grand-titon-otrazhenie.jpg"
-          alt="Mountains"
-        />
-        <table>
-          <tr>
-            <td>11</td>
-            <td>12</td>
-            <td>13</td>
-            <td>14</td>
-          </tr>
-          <tr>
-            <td>21</td>
-            <td>22</td>
-            <td>23</td>
-            <td>24</td>
-          </tr>
-        </table>
+        </div>
+
+        <ol>
+          <li></li>
+          <li></li>
+            <ol>
+              <li value="2">1.</li>
+              <li value="2">2.</li>
+              <li value="2">3.</li>
+                <ol>
+                  <li value="2">3. 1.</li>
+                  <li value="2">3. 2.</li>
+                  <li value="2">3. 3.</li>
+                </ol>
+              </li>
+              <li value="2">4.</li>
+            </ol>
+          </li>
+          <li></li>
+          <li></li>
+        </ol>
       </section>
       <section>
-        <form onsubmit="return false;">
-          <div>
-            <label for="first_name">First name:</label>
-            <input id="first_name" type="text" />
-          </div>
-          <label for="second_name">Second name:</label>
-          <input id="second_name" type="text" />
-          </div>
-          </div>
-          <div id="result">Result</div>
-          <div><button>Send</button></div>
+        <form action="index.html" method="post">
+          <p><b>Input text:</b><br>
+          <textarea type="texts"></textarea>
+          <p><b>Input First name:</b><br>
+          <input type="text" name="name">
+          <p><b>Input email:</b><br>
+          <input type="email" name="email">
+          <p><b>Input password:</b><br>
+          <input type="password" name="password">
+          <p><b>Input date:</b><br>
+            <input type="date" name="date">
+          <p><b>Checkbox:</b><br>
+          <input type="checkbox" checked id="checkbox1">
+          <label for="checkbox1">Checkbox 1</label><br>
+          <input type="checkbox" id="checkbox2">
+          <label for="checkbox2">Checkbox 2</label>
+          <p><b>Radio:</b><br>
+          <input type="radio" id="radio1"
+                 name="radio" value="true1">
+          <label for="radio1">Radio button 1</label><br>
+          <input type="radio" id="radio2"
+                 name="radio" value="true2">
+          <label for="radio2">Radio button 2</label>
         </form>
+        </section>
+      <section>
+        <section>
+          <button onclick="document.getElementById('button').style.display = 'block';">Click</button>
+          <div id="button" style="display:none">Вы нажали кнопку</div>
       </section>
+
+        <section>
+          <p><b>Table:</b></p>
+          <table border="1" style="text-align: center;">
+          <tr><td colspan="2">данные</td><td>данные</td></tr>
+          <tr><td>данные</td><td>данные</td><td>данные</td></tr>
+          <tr><td>данные</td><td>данные</td><td>данные</td></tr>
+          <tr><td>данные</td><td>данные</td><td>данные</td></tr>
+          </table>
+        </section><br>
+
+        <section>
+          <p><b>List:</b></p>
+          <select id="select">
+            <option>Выберите из списка</option>
+            <option value=”1”>1</option>
+            <option value=”2”>2</option>
+            <option value=”3”>3</option>
+            <option value=”4”>4</option>
+            <option value=”5”>5</option>
+          </select>
+        </section>
+        <section>
+          <p><b>Picture:</b></p>
+          <img src="https://images.wallpaperscraft.com/image/single/mountains_peak_slope_175846_3840x2400.jpg"
+               alt="Mountains"  width="400">
+          <p><b>SVG Picture:</b></p>
+          <svg width="100" height="100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="black" />
+          </svg>
+
+        </section>
     </main>
-    <footer>Footer</footer>
+    <footer>
+      <p>-------------------------</p>
+      <p>WebDev 2023</p>
+    </footer>
   </body>
 </html>
